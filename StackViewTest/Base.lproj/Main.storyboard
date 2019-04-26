@@ -18,10 +18,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="StackView Test Column and Row" id="CHU-G0-Agc">
+                            <tableViewSection id="CHU-G0-Agc">
+                                <string key="headerTitle">StackView Test Column and Row
+縦にコンテンツを並べたバージョンと横にコンテンツを並べたバージョン</string>
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MenuCell" id="shM-mE-Sqw">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="91.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="shM-mE-Sqw" id="NbH-fh-YvD">
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
@@ -44,7 +46,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MenuCell" id="4Hv-F5-2UO">
-                                        <rect key="frame" x="0.0" y="99.5" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="135.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Hv-F5-2UO" id="oCl-Yg-MoW">
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
@@ -65,10 +67,12 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="StackView Test ScrollView" id="gsF-TE-AgG">
+                            <tableViewSection id="gsF-TE-AgG">
+                                <string key="headerTitle">StackView Test ScrollView
+ScrollView 上にコンテンツを並べて表示非表示でトルツメする</string>
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" id="CnI-GI-PlV">
-                                        <rect key="frame" x="0.0" y="199.5" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="253.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CnI-GI-PlV" id="aqo-Vb-Ucm">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -88,6 +92,29 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="qa5-nt-aMg" kind="show" id="nYR-tG-ZCB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" id="wJt-EM-sSQ">
+                                        <rect key="frame" x="0.0" y="297.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wJt-EM-sSQ" id="Roi-Ob-t9q">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26A-6C-9bA">
+                                                    <rect key="frame" x="24" y="13" width="31.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="26A-6C-9bA" firstAttribute="leading" secondItem="Roi-Ob-t9q" secondAttribute="leading" constant="24" id="3Gy-y2-hBN"/>
+                                                <constraint firstItem="26A-6C-9bA" firstAttribute="centerY" secondItem="Roi-Ob-t9q" secondAttribute="centerY" id="Uw0-ea-yF9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="KfK-GL-qj5" kind="show" id="f5q-dj-p8f"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -119,6 +146,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syQ-cm-az1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2525" y="-79"/>
+        </scene>
+        <!--ScrollViewTestViewController-->
+        <scene sceneID="EeK-up-5tW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ScrollViewTestViewController" id="KfK-GL-qj5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ASi-tw-oCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2525" y="-1"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="edy-cN-2Km">

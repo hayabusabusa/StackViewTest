@@ -10,6 +10,8 @@
 		A4169E54227196A40023298A /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4169E53227196A40023298A /* ScrollViewController.swift */; };
 		A4169E56227196AC0023298A /* ScrollViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4169E55227196AC0023298A /* ScrollViewController.storyboard */; };
 		A4169E582271B6230023298A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4169E572271B6230023298A /* Data.swift */; };
+		A45DD92E227290BD00157D9A /* ScrollViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DD92D227290BD00157D9A /* ScrollViewTestViewController.swift */; };
+		A45DD930227290E400157D9A /* ScrollViewTestViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A45DD92F227290E400157D9A /* ScrollViewTestViewController.storyboard */; };
 		A4DECB1122714B80002BF4FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DECB1022714B80002BF4FA /* AppDelegate.swift */; };
 		A4DECB1322714B80002BF4FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DECB1222714B80002BF4FA /* ViewController.swift */; };
 		A4DECB1622714B80002BF4FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4DECB1422714B80002BF4FA /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 		A4169E53227196A40023298A /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		A4169E55227196AC0023298A /* ScrollViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollViewController.storyboard; sourceTree = "<group>"; };
 		A4169E572271B6230023298A /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		A45DD92D227290BD00157D9A /* ScrollViewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewTestViewController.swift; sourceTree = "<group>"; };
+		A45DD92F227290E400157D9A /* ScrollViewTestViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollViewTestViewController.storyboard; sourceTree = "<group>"; };
 		A4DECB0D22714B80002BF4FA /* StackViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4DECB1022714B80002BF4FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4DECB1222714B80002BF4FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,15 @@
 			path = ScrollView;
 			sourceTree = "<group>";
 		};
+		A45DD92C227290A300157D9A /* ScrollViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				A45DD92D227290BD00157D9A /* ScrollViewTestViewController.swift */,
+				A45DD92F227290E400157D9A /* ScrollViewTestViewController.storyboard */,
+			);
+			path = ScrollViewTest;
+			sourceTree = "<group>";
+		};
 		A4DECB0422714B80002BF4FA = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +135,7 @@
 				A4DECB1422714B80002BF4FA /* Main.storyboard */,
 				A4DECB3E22714B9E002BF4FA /* Column */,
 				A4169E50227195C60023298A /* ScrollView */,
+				A45DD92C227290A300157D9A /* ScrollViewTest */,
 				A4DECB1722714B82002BF4FA /* Assets.xcassets */,
 				A4DECB1922714B82002BF4FA /* LaunchScreen.storyboard */,
 				A4DECB1C22714B82002BF4FA /* Info.plist */,
@@ -263,6 +277,7 @@
 				A4DECB1B22714B82002BF4FA /* LaunchScreen.storyboard in Resources */,
 				A4DECB1822714B82002BF4FA /* Assets.xcassets in Resources */,
 				A4169E56227196AC0023298A /* ScrollViewController.storyboard in Resources */,
+				A45DD930227290E400157D9A /* ScrollViewTestViewController.storyboard in Resources */,
 				A4DECB1622714B80002BF4FA /* Main.storyboard in Resources */,
 				A4DECB4222714D11002BF4FA /* ColumnViewController.storyboard in Resources */,
 			);
@@ -293,6 +308,7 @@
 				A4169E582271B6230023298A /* Data.swift in Sources */,
 				A4DECB1322714B80002BF4FA /* ViewController.swift in Sources */,
 				A4DECB1122714B80002BF4FA /* AppDelegate.swift in Sources */,
+				A45DD92E227290BD00157D9A /* ScrollViewTestViewController.swift in Sources */,
 				A4169E54227196A40023298A /* ScrollViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

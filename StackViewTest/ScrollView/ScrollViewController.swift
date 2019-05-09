@@ -10,6 +10,7 @@ import UIKit
 
 class ScrollViewController: UIViewController {
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
@@ -25,6 +26,9 @@ extension ScrollViewController {
         navigationItem.title = "ScrollView"
         
         // UI
+        titleLabel.text = """
+        "宇宙のように壮大でコンビニのように身近な音楽" 京都から全国へ、果ては宇宙まで
+        """
         textView.text = """
         2012年に結成された宇宙コンビニは、ポストロックをよりポップに消化し独自の世界観を産み出し、不可思議かつ親しみやすい楽曲で多くのリスナーを驚かせた。20代そこそこの若いバンドとは思えない卓越した演奏力を武器に、カナダでのライヴ・ツアーなど国内にとどまらない活動をおこなってきただけに突然の解散発表は戸惑わざるをえない。
         

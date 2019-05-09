@@ -14,6 +14,7 @@ final class ColumnViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Column"
     }
     
     @IBAction func tapShow(_ sender: UIButton) {

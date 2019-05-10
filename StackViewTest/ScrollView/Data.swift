@@ -11,17 +11,12 @@ import UIKit
 struct ArticleData {
     
     let image: UIImage?
-    let title: String?
-    let content: String?
+    let title: String
+    let content: String
     
-    var showAd: Bool = true
-    var showLargeAd: Bool = true
-    
-    init(image: UIImage, title: String, content: String, showAd: Bool, showLargeAd: Bool) {
+    init(image: UIImage?, title: String, content: String) {
         self.image = image
         self.title = title
         self.content = content
-        self.showAd = showAd
-        self.showLargeAd = showLargeAd
     }
 }

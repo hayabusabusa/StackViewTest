@@ -80,7 +80,10 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkQ-rh-aHJ">
                                                         <rect key="frame" x="8" y="8" width="398" height="34"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Reload"/>
+                                                        <connections>
+                                                            <action selector="tapReload:" destination="Dfz-hi-P7H" eventType="touchUpInside" id="ln3-vW-wYj"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.14901960780000001" green="0.59999999999999998" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -114,6 +117,7 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="imageView" destination="q3c-e2-Jic" id="TnB-Dj-5WM"/>
                         <outlet property="textView" destination="OVH-ub-9Gz" id="5g0-vh-4lc"/>
                         <outlet property="titleLabel" destination="bZn-do-1ik" id="ZEv-bM-OiS"/>
                     </connections>

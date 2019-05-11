@@ -14,6 +14,8 @@ import UIKit
 class RowViewController: UIViewController {
     
     @IBOutlet weak var layoutColorPalette: UIView!
+    @IBOutlet weak var menuStackView: UIStackView!
+    @IBOutlet weak var menuLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,5 +36,27 @@ extension RowViewController {
     func setupUI() {
         // Navigation
         navigationItem.title = "Row"
+        
+        // StackView
+        let views = menuStackView.arrangedSubviews
+        for (i, item) in views.enumerated() {
+            item.isUserInteractionEnabled = true
+            item.tag = i
+            item.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapMenuButton(_:))))
+        }
+    }
+    
+    @objc func tapMenuButton(_ sender: UITapGestureRecognizer) {
+        let tag = sender.view?.tag ?? -1
+        switch tag {
+        case 0:
+            menuLabel.text = "User button"
+        case 1:
+            menuLabel.text = "Infomation button"
+        case 2:
+            menuLabel.text = "Setting button"
+        default:
+            break
+        }
     }
 }

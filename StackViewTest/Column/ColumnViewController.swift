@@ -10,15 +10,8 @@ import UIKit
 
 final class ColumnViewController: UIViewController {
     
-    @IBOutlet weak var textViewCollupsedView: UIView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Column"
-    }
-    
-    @IBAction func tapShow(_ sender: UIButton) {
-        textViewCollupsedView.isHidden.toggle()
-        sender.setTitle(textViewCollupsedView.isHidden ? "Dismiss" : "Show", for: .normal)
     }
 }

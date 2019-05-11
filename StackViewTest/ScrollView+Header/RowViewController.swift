@@ -52,7 +52,7 @@ extension RowViewController {
         case 0:
             menuLabel.text = "User button"
         case 1:
-            menuLabel.text = "Infomation button"
+            menuLabel.text = "Information button"
         case 2:
             menuLabel.text = "Setting button"
         default:

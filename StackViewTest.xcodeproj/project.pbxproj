@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		71F294022286E75200FF8273 /* StretchHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F294012286E75200FF8273 /* StretchHeaderViewController.swift */; };
 		71F294042286E7D000FF8273 /* StretchHeaderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F294032286E7D000FF8273 /* StretchHeaderViewController.storyboard */; };
+		71F2940622872DB100FF8273 /* RowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F2940522872DB100FF8273 /* RowViewController.swift */; };
+		71F29408228730E700FF8273 /* RowViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F29407228730E700FF8273 /* RowViewController.storyboard */; };
+		71F2940D2287350900FF8273 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71F2940A2287350900FF8273 /* Nunito-Bold.ttf */; };
+		71F2940E2287350900FF8273 /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71F2940B2287350900FF8273 /* Nunito-Light.ttf */; };
+		71F2940F2287350900FF8273 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71F2940C2287350900FF8273 /* Nunito-Regular.ttf */; };
 		A4169E54227196A40023298A /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4169E53227196A40023298A /* ScrollViewController.swift */; };
 		A4169E56227196AC0023298A /* ScrollViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4169E55227196AC0023298A /* ScrollViewController.storyboard */; };
 		A4169E582271B6230023298A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4169E572271B6230023298A /* Data.swift */; };
@@ -45,6 +50,11 @@
 /* Begin PBXFileReference section */
 		71F294012286E75200FF8273 /* StretchHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchHeaderViewController.swift; sourceTree = "<group>"; };
 		71F294032286E7D000FF8273 /* StretchHeaderViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StretchHeaderViewController.storyboard; sourceTree = "<group>"; };
+		71F2940522872DB100FF8273 /* RowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RowViewController.swift; path = "StackViewTest/ScrollView+Header/RowViewController.swift"; sourceTree = SOURCE_ROOT; };
+		71F29407228730E700FF8273 /* RowViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = RowViewController.storyboard; path = "StackViewTest/ScrollView+Header/RowViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		71F2940A2287350900FF8273 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		71F2940B2287350900FF8273 /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		71F2940C2287350900FF8273 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		A4169E53227196A40023298A /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		A4169E55227196AC0023298A /* ScrollViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollViewController.storyboard; sourceTree = "<group>"; };
 		A4169E572271B6230023298A /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -101,6 +111,16 @@
 			path = "ScrollView+Header";
 			sourceTree = "<group>";
 		};
+		71F29409228734D300FF8273 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				71F2940A2287350900FF8273 /* Nunito-Bold.ttf */,
+				71F2940B2287350900FF8273 /* Nunito-Light.ttf */,
+				71F2940C2287350900FF8273 /* Nunito-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		A4169E50227195C60023298A /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +134,8 @@
 		A499871A22841F3A00DE6A75 /* Row */ = {
 			isa = PBXGroup;
 			children = (
+				71F2940522872DB100FF8273 /* RowViewController.swift */,
+				71F29407228730E700FF8273 /* RowViewController.storyboard */,
 			);
 			path = Row;
 			sourceTree = "<group>";
@@ -159,6 +181,7 @@
 				A4169E50227195C60023298A /* ScrollView */,
 				71F294002286E72D00FF8273 /* ScrollView+Header */,
 				A4DECB1722714B82002BF4FA /* Assets.xcassets */,
+				71F29409228734D300FF8273 /* Fonts */,
 				A4DECB1922714B82002BF4FA /* LaunchScreen.storyboard */,
 				A4DECB1C22714B82002BF4FA /* Info.plist */,
 			);
@@ -296,10 +319,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71F2940F2287350900FF8273 /* Nunito-Regular.ttf in Resources */,
 				A4DECB1B22714B82002BF4FA /* LaunchScreen.storyboard in Resources */,
 				A4DECB1822714B82002BF4FA /* Assets.xcassets in Resources */,
+				71F29408228730E700FF8273 /* RowViewController.storyboard in Resources */,
 				A499871F22841FDF00DE6A75 /* BasicViewController.storyboard in Resources */,
+				71F2940D2287350900FF8273 /* Nunito-Bold.ttf in Resources */,
 				71F294042286E7D000FF8273 /* StretchHeaderViewController.storyboard in Resources */,
+				71F2940E2287350900FF8273 /* Nunito-Light.ttf in Resources */,
 				A4169E56227196AC0023298A /* ScrollViewController.storyboard in Resources */,
 				A4DECB1622714B80002BF4FA /* Main.storyboard in Resources */,
 				A4DECB4222714D11002BF4FA /* ColumnViewController.storyboard in Resources */,
@@ -328,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4DECB4022714CEB002BF4FA /* ColumnViewController.swift in Sources */,
+				71F2940622872DB100FF8273 /* RowViewController.swift in Sources */,
 				A499871D22841FBE00DE6A75 /* BasicViewController.swift in Sources */,
 				A4169E582271B6230023298A /* Data.swift in Sources */,
 				A4DECB1322714B80002BF4FA /* ViewController.swift in Sources */,

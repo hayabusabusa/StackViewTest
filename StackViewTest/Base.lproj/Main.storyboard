@@ -48,8 +48,32 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Column and row" id="CHU-G0-Agc">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MenuCell" id="shM-mE-Sqw">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MenuCell" id="4Hv-F5-2UO">
                                         <rect key="frame" x="0.0" y="155.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Hv-F5-2UO" id="oCl-Yg-MoW">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Row" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COe-Jx-woy">
+                                                    <rect key="frame" x="24" y="13" width="336" height="18"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="COe-Jx-woy" firstAttribute="leading" secondItem="oCl-Yg-MoW" secondAttribute="leading" constant="24" id="8Hw-r9-jOM"/>
+                                                <constraint firstItem="COe-Jx-woy" firstAttribute="centerY" secondItem="oCl-Yg-MoW" secondAttribute="centerY" id="FMw-QG-112"/>
+                                                <constraint firstAttribute="trailing" secondItem="COe-Jx-woy" secondAttribute="trailing" constant="16" id="Of8-IP-t3B"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="MzR-Dp-sEq" kind="show" id="B7j-1c-JzP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MenuCell" id="shM-mE-Sqw">
+                                        <rect key="frame" x="0.0" y="199.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="shM-mE-Sqw" id="NbH-fh-YvD">
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
@@ -71,27 +95,6 @@
                                         <connections>
                                             <segue destination="gbn-Lm-ibQ" kind="show" id="0Jh-0y-pO5"/>
                                         </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MenuCell" id="4Hv-F5-2UO">
-                                        <rect key="frame" x="0.0" y="199.5" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Hv-F5-2UO" id="oCl-Yg-MoW">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Row" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COe-Jx-woy">
-                                                    <rect key="frame" x="24" y="13" width="336" height="18"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="COe-Jx-woy" firstAttribute="leading" secondItem="oCl-Yg-MoW" secondAttribute="leading" constant="24" id="8Hw-r9-jOM"/>
-                                                <constraint firstItem="COe-Jx-woy" firstAttribute="centerY" secondItem="oCl-Yg-MoW" secondAttribute="centerY" id="FMw-QG-112"/>
-                                                <constraint firstAttribute="trailing" secondItem="COe-Jx-woy" secondAttribute="trailing" constant="16" id="Of8-IP-t3B"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -173,7 +176,15 @@
                 <viewControllerPlaceholder storyboardName="ColumnViewController" id="gbn-Lm-ibQ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZe-cm-DCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2338" y="-106"/>
+            <point key="canvasLocation" x="2338" y="-74"/>
+        </scene>
+        <!--RowViewController-->
+        <scene sceneID="4U5-hY-9ob">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RowViewController" id="MzR-Dp-sEq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5Q-Jg-w8r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2323" y="-102"/>
         </scene>
         <!--ScrollViewController-->
         <scene sceneID="UUL-Ad-4jF">

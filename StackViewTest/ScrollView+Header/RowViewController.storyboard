@@ -106,7 +106,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Us1-df-mYW">
                                                         <rect key="frame" x="342" y="0.0" width="40" height="40"/>
-                                                        <color key="backgroundColor" red="0.035294117647058823" green="0.51764705882352935" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="0.45490196078431372" green="0.72549019607843135" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <state key="normal">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
